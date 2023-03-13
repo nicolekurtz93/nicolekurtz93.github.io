@@ -35,6 +35,10 @@ h4 {
   margin: 0;
 }
 
+p {
+  text-align: justify;
+}
+
 nav {
   /* display: flex; */
   top: 0;
@@ -107,11 +111,11 @@ nav {
 }
 
 .portrait {
-  width: 30%;
+  width: 15%;
   border-radius: 40%;
   /* display: block; */
-  max-height: 200px;
-  max-width: 199px;
+  /* max-height: 200px;
+  max-width: 199px; */
 
   background-color: #e32d46;
   margin: 30px;
@@ -120,18 +124,22 @@ nav {
 .bio {
   justify-content: center;
   align-items: center;
+  /* margin-left: 30px; */
   display: flex;
   /* flex-direction: column; */
   background-color: white;
-  margin-top: 150px;
+  margin-top: 175px;
   margin-bottom: 30px;
+  width: 100%;
+  display: flex;
+
   /* background-color: rgba(227, 45, 70, 0.2); */
 }
 .bioText {
   /* width: 600px; */
   margin: 10px;
   font-family: var(--bs-body-font-family);
-  font-size: 25px;
+  /* font-size: 25px; */
   width: 50%;
 }
 
@@ -147,7 +155,7 @@ nav {
   /* flex-direction: row; */
   display: flex;
   flex-wrap: wrap;
-  width: 100%;
+  /* width: 100%; */
   margin: 10px;
 }
 
@@ -166,6 +174,7 @@ nav {
 
 .accordion-button:not(.collapsed) {
   background-color: rgba(227, 45, 70, 0.2) !important;
+  color: black !important;
 }
 
 .accordion-button {
@@ -173,16 +182,31 @@ nav {
   /* flex-direction: row; */
 }
 
-.accordion {
-  display: flex;
-  /* flex-direction: row; */
-  justify-content: space-evenly;
-  justify-items: center;
-  width: 100%;
+.accordion-button:focus {
+  border-color: #e32d46 !important;
+  box-shadow: 0 0 0 0 0.25 #e32d46;
 }
 
-.accordion-item {
-  width: 100%;
-  flex-direction: row;
+.accordion {
+  /* display: flex; */
+  /* flex-direction: row; */
+  /* justify-content: space-evenly; */
+  /* justify-items: center; */
+  width: 90%;
+  margin: 20px;
+}
+form {
+  justify-content: center;
+  align-items: center;
+  /* background-color: rgba(227, 45, 70, 0.2) !important; */
+  border: #e32d46 solid 3px;
+  margin: 20px;
+  width: 80% !important;
+  padding: 20px;
+}
+
+#contact-section {
+  justify-content: center !important;
   display: flex;
+  margin: 20px;
 }

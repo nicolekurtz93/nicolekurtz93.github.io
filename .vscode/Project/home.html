@@ -32,7 +32,7 @@
         <div class="flex-item nav-items">
           <a href="#about-section" class="list-item">About</a>
           <a href="#previous-work-section" class="list-item">Previous Work</a>
-          <a href="02-grid.html" class="list-item">Contact</a>
+          <a href="#contact-section" class="list-item">Contact</a>
           <a href="03-bootstrap-form.html" class="list-item">Projects</a>
         </div>
       </div>
@@ -47,16 +47,42 @@
         />
         <div class="bioText">
           <h2>Hi! My Name is Nicole Kurtz.</h2>
-          I am pursuing a Bachelors Degree in Computer Science at Portland State
-          University. Prior to returning to school, I worked as a Graphic
-          Designer for roughly 8 years. In my spare time, I enjoy board games,
-          movies, and cross stitching.
+          <p>
+            I am originally from Chapel Hill, North Carolina where I obtained my
+            Graphic Design associates in 2016. I worked as a graphic designer
+            for four years before pursuing my passion in Computer Science at
+            Portland State University (PSU) in 2020. I worked as a Lab
+            Facilitator for the lower division computer science courses at PSU,
+            leading presentations on lab topics to support students with
+            programming the concepts they were learning in the classroom. The
+            focus of the labs was on data structures and abstract data types in
+            C++.
+          </p>
+          <p>
+            In 2022, I took 6-months off of school to work as a full-time
+            Software Development intern at Cambia Health Solutions for a 6 month
+            period. During this time, I led the design and creation of an AWS
+            DynamoDB table and C# client for use of tracing the lifecycle of
+            events through applications. Additionally, this project required
+            record creation throughout the teams applications at event state
+            changes. Following completion of the client, I developed API
+            endpoints and a user interface for querying DynamoDB. Upon
+            completion of the full-time internship, Cambia offered me to
+            continue working part-time when I returned to school until the
+            completion of my degree.
+          </p>
+          <p>
+            Through my former experience as a Graphic Designer as well as my
+            work experience at Cambia, I have formed a passion for Full Stack
+            Development. Additionally, I have a passion for creating software
+            that manages and analyzes large amounts of data.
+          </p>
         </div>
       </div>
 
-      <h1 id="previous-work-section">Work Experience</h1>
       <div class="work-items">
         <div class="accordion accordion-flush" id="accordionFlushExample">
+          <h1 id="previous-work-section">Work Experience</h1>
           <div class="accordion-item">
             <button
               class="accordion-button collapsed"
@@ -171,6 +197,59 @@
             </div>
           </div>
         </div>
+      </div>
+      <div class="" id="contact-section">
+        <form class="col-12">
+          <h1>Contact Form</h1>
+          <div class="row my-2">
+            <label for="username" class="col-md-4">Name:</label>
+
+            <div class="col-md-8">
+              <input type="text" id="name" name="name" class="form-control" />
+            </div>
+          </div>
+          <div class="row my-2">
+            <label for="email" class="col-md-4">Email:</label>
+            <div class="col-md-8">
+              <input
+                type="email"
+                id="email"
+                name="email"
+                class="form-control"
+              />
+            </div>
+          </div>
+
+          <div class="row my-2">
+            <label for="phone" class="col-md-4">Phone Number:</label>
+            <div class="col-md-8">
+              <input
+                type="email"
+                id="email"
+                name="email"
+                class="form-control"
+              />
+            </div>
+          </div>
+          <div id="buttons" class="text-center">
+            <button
+              type="submit"
+              name="submit"
+              value="Submit"
+              class="btn btn-primary my-4 px-4"
+            >
+              Submit
+            </button>
+            <button
+              type="reset"
+              name="reset"
+              value="Reset"
+              class="btn btn-secondary my-4 px-4"
+            >
+              Reset
+            </button>
+          </div>
+        </form>
       </div>
     </div>
   </body>
