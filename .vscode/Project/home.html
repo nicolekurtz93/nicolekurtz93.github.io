@@ -22,6 +22,7 @@
       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
       crossorigin="anonymous"
     ></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
     <script defer src="home.js"></script>
   </head>
   <body>
@@ -38,7 +39,7 @@
         </div>
       </div>
     </nav>
-    <div class="body">
+    <div class="body" id="body">
       <div class="bio" id="about-section">
         <img
           src="images/port.png"
@@ -93,16 +94,16 @@
               aria-expanded="false"
               aria-controls="flush-collapseOne"
             >
-              <ul>
+              <div>
                 <h2>Software Development Intern</h2>
                 <h3>Cambia Health Solutions</h3>
                 <h4>March 2022-Current</h4>
-              </ul>
+              </div>
             </button>
             <div
               id="flush-collapseOne"
               class="accordion-collapse collapse"
-              aria-labelledby="flush-headingOne"
+              aria-labelledby="flush-collapseOne"
               data-bs-parent="#accordionFlushExample"
             >
               <div class="accordion-body">
@@ -136,16 +137,16 @@
               aria-expanded="false"
               aria-controls="flush-collapseTwo"
             >
-              <ul>
+              <div>
                 <h2>Technical Course Facilitator</h2>
                 <h3>Portland State University</h3>
                 <h4>March 2021 - March 2022</h4>
-              </ul>
+              </div>
             </button>
             <div
               id="flush-collapseTwo"
               class="accordion-collapse collapse"
-              aria-labelledby="flush-headingTwo"
+              aria-labelledby="flush-collapseTwo"
               data-bs-parent="#accordionFlushExample"
             >
               <div class="accordion-body">
@@ -175,16 +176,16 @@
               aria-expanded="false"
               aria-controls="flush-collapseThree"
             >
-              <ul>
+              <div>
                 <h2>Graphic Designer</h2>
                 <h3>Nicole Kurtz Design</h3>
                 <h4>April 2015 - March 2021</h4>
-              </ul>
+              </div>
             </button>
             <div
               id="flush-collapseThree"
               class="accordion-collapse collapse"
-              aria-labelledby="flush-headingThree"
+              aria-labelledby="flush-collapseThree"
               data-bs-parent="#accordionFlushExample"
             >
               <div class="accordion-body">
@@ -201,64 +202,66 @@
       </div>
       <div class="" id="contact-section">
         <form class="col-12" id="form">
-          <h1>Contact Form</h1>
-          <div class="row my-2">
-            <label for="name" class="col-md-4">Name:</label>
+          <h1 class="form-header">Contact Form</h1>
+          <hr />
+          <div class="form-items">
+            <div class="row my-2">
+              <label for="name" class="col-md-4">Name:</label>
 
-            <div class="col-md-8">
-              <input type="text" id="name" name="name" class="form-control" />
+              <div class="col-md-8">
+                <input type="text" id="name" name="name" class="form-control" />
+              </div>
             </div>
-          </div>
-          <div class="row my-2">
-            <label for="email" class="col-md-4">Email:</label>
-            <div class="col-md-8">
-              <input
-                type="email"
-                id="email"
-                name="email"
-                class="form-control"
-              />
+            <div class="row my-2">
+              <label for="email" class="col-md-4">Email:</label>
+              <div class="col-md-8">
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  class="form-control"
+                />
+              </div>
             </div>
-          </div>
 
-          <div class="row my-2">
-            <label for="tel" class="col-md-4">Phone Number:</label>
-            <div class="col-md-8">
-              <input type="tel" id="tel" name="tel" class="form-control" />
+            <div class="row my-2">
+              <label for="tel" class="col-md-4">Phone Number:</label>
+              <div class="col-md-8">
+                <input type="tel" id="tel" name="tel" class="form-control" />
+              </div>
             </div>
-          </div>
 
-          <div class="row my-2">
-            <label for="message" class="col-md-4">Message:</label>
-            <div class="col-md-8">
-              <textarea
-                name="message"
-                id="message"
-                class="form-control"
-                rows="4"
-              ></textarea>
+            <div class="row my-2">
+              <label for="message" class="col-md-4">Message:</label>
+              <div class="col-md-8">
+                <textarea
+                  name="message"
+                  id="message"
+                  class="form-control"
+                  rows="4"
+                ></textarea>
+              </div>
             </div>
-          </div>
-
-          <div id="buttons" class="text-center">
-            <button
-              type="submit"
-              name="submit"
-              value="Submit"
-              class="btn my-4 px-4"
-              id="submit"
-            >
-              Submit
-            </button>
-            <button
-              type="reset"
-              name="reset"
-              value="Reset"
-              id="reset"
-              class="btn secondary my-4 px-4"
-            >
-              Reset
-            </button>
+            <div id="buttons" class="text-center">
+              <button
+                type="submit"
+                name="submit"
+                value="Submit"
+                class="btn my-4 px-4"
+                id="submit"
+              >
+                Submit
+              </button>
+              <button
+                type="reset"
+                name="reset"
+                value="Reset"
+                id="reset"
+                class="btn secondary my-4 px-4"
+              >
+                Reset
+              </button>
+            </div>
           </div>
         </form>
       </div>

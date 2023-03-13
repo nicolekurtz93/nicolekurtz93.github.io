@@ -159,24 +159,37 @@ nav {
 form {
   justify-content: center;
   align-items: center;
-  border: #e32d46 solid 3px;
+  /* border: #e32d46 solid 3px; */
   margin: 20px;
-  width: 80% !important;
+  width: 90% !important;
   padding: 20px;
 }
 
 #contact-section {
   justify-content: center !important;
   display: flex;
-  margin: 20px;
+  /* margin: 20px; */
+  width: 100%;
 }
 
 #reset {
   background-color: white;
   border: #e32d46 2px solid;
+  font-size: 19px;
+  font-weight: bold;
+  width: 115px;
 }
 
 #submit {
   background-color: #e32d46;
+  border: #e32d46 2px solid;
   color: white;
+  font-size: 19px;
+  font-weight: bold;
+  width: 115px;
+}
+
+.form-items {
+  margin-top: 20px;
+  width: 70%;
 }
