@@ -34,8 +34,8 @@
         <div class="flex-item nav-items">
           <a href="#about-section" class="list-item">About</a>
           <a href="#previous-work-section" class="list-item">Previous Work</a>
+          <a href="#project-section" class="list-item">Projects</a>
           <a href="#contact-section" class="list-item">Contact</a>
-          <a href="03-bootstrap-form.html" class="list-item">Projects</a>
         </div>
       </div>
     </nav>
@@ -196,6 +196,95 @@
                   <li>Illustration design</li>
                 </ul>
               </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="project-body">
+        <div id="project-section" class="row my-5">
+          <div class="project-header">
+            <h1>Projects</h1>
+            <hr />
+          </div>
+          <div class="carousel-section row my-5">
+            <div
+              id="carouselExampleDark"
+              class="carousel carousel-dark slide"
+              data-bs-ride="carousel"
+            >
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <a href="https://github.com/nicolekurtz93/Tic-Tac-Toe">
+                    <img
+                      src="images/tic-tac-toe.jpg"
+                      class="d-block mx-auto"
+                      alt="Image of a Tic Tac Toe game"
+                      id="carousel-image"
+                    />
+                  </a>
+                  <h5>Tic Tac Toe</h5>
+                  <p>
+                    Implemented a Q-Learning Tic-Tac-Toe player who used an
+                    on-policy epsilon-greedy action selection.
+                  </p>
+                </div>
+                <div class="carousel-item">
+                  <a href="https://github.com/nicolekurtz93/AIChessPlayer">
+                    <img
+                      src="images/pawn-chess.jpg"
+                      class="d-block mx-auto"
+                      alt="Image of chess pieces"
+                      id="carousel-image"
+                  /></a>
+
+                  <h5>AI Chess Bot</h5>
+                  <p class="mx-auto w-75">
+                    Worked with a group to create an AI chess bot which used a
+                    min-max algorithm with support of heuristics to select the
+                    optimal board state. Program generates an array of charts to
+                    compare different heuristics and performance of min-max
+                    function vs min-max with alpha-beta pruning.
+                  </p>
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                  <a href="https://github.com/nicolekurtz93/8-Puzzle">
+                    <img
+                      src="images/puzzle-pieces.jpg"
+                      class="d-block mx-auto"
+                      alt="Image of two people holding a puzzle piece"
+                      id="carousel-image"
+                  /></a>
+                  <h5>8-Puzzle/15-puzzle Optimal Path</h5>
+                  <p>
+                    From an inital state of either an 8-puzzle or a 15-puzzle,
+                    finds optimal path to goal state.
+                  </p>
+                </div>
+              </div>
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#carouselExampleDark"
+                data-bs-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#carouselExampleDark"
+                data-bs-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Next</span>
+              </button>
             </div>
           </div>
         </div>
