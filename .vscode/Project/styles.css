@@ -1,10 +1,11 @@
 html {
-  scroll-padding-top: 175px;
+  scroll-padding-top: 175px !important;
 }
-body {
+.body {
   /* margin-left: 550px; */
   /* padding: 10px; */
   display: flex;
+  margin-top: 175px !important;
   flex-direction: column;
 }
 
@@ -24,42 +25,29 @@ h2 {
   margin: 0;
 }
 
-h3 {
+h3,
+h4 {
   /* color: #e32d46; */
   font-size: 20px;
   margin: 0;
 }
 
-h4 {
-  font-size: 20px;
-  margin: 0;
-}
-
-p {
-  text-align: justify;
-}
-
 nav {
-  /* display: flex; */
   top: 0;
-  /* height: 100%; */
   width: 100%;
   background-color: #e32d46;
   display: flex;
-  /* flex-direction: column; */
   align-items: center;
   position: fixed;
   justify-content: center;
   margin-bottom: 15px;
-  /* border: 5px solid #e32d46; */
-  /* box-shadow: 5px 0px #b47aea; */
+  z-index: 100;
 }
 
 .nav-items {
   background-color: var(--white);
   flex-wrap: nowrap;
   height: 75px;
-  /* padding: 35px; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -73,7 +61,6 @@ nav {
   font-family: "Times New Roman", Times, serif;
   font-size: 20px;
   padding: 20px;
-  /* height: 100%; */
 }
 
 .list-item:active {
@@ -92,12 +79,12 @@ nav {
 
 .logo {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  width: 50%;
+  width: 60%;
   justify-content: center;
   align-items: center;
   margin-top: 30px;
-  max-width: 1200px;
-  max-height: 240px;
+  max-width: 1000px;
+  max-height: auto;
 }
 
 .logo-and-nav {
@@ -113,10 +100,6 @@ nav {
 .portrait {
   width: 15%;
   border-radius: 40%;
-  /* display: block; */
-  /* max-height: 200px;
-  max-width: 199px; */
-
   background-color: #e32d46;
   margin: 30px;
 }
@@ -124,39 +107,24 @@ nav {
 .bio {
   justify-content: center;
   align-items: center;
-  /* margin-left: 30px; */
   display: flex;
-  /* flex-direction: column; */
   background-color: white;
-  margin-top: 175px;
   margin-bottom: 30px;
   width: 100%;
   display: flex;
-
-  /* background-color: rgba(227, 45, 70, 0.2); */
 }
 .bioText {
-  /* width: 600px; */
   margin: 10px;
   font-family: var(--bs-body-font-family);
-  /* font-size: 25px; */
   width: 50%;
-}
-
-.text {
-  font-family: "Times New Roman", Times, serif;
-  margin-top: 10px;
-  /* margin: 20px; */
-  /* width: 400px; */
 }
 
 .work-items {
   justify-content: center;
-  /* flex-direction: row; */
   display: flex;
   flex-wrap: wrap;
-  /* width: 100%; */
   margin: 10px;
+  margin-top: 25px !important;
 }
 
 .bio-pic {
@@ -166,10 +134,8 @@ nav {
 
 .work-item {
   margin: 10px;
-  /* min-width: 400px; */
   flex-direction: column;
   display: flex;
-  /* max-width: 400px; */
 }
 
 .accordion-button:not(.collapsed) {
@@ -179,7 +145,6 @@ nav {
 
 .accordion-button {
   display: flex;
-  /* flex-direction: row; */
 }
 
 .accordion-button:focus {
@@ -188,17 +153,12 @@ nav {
 }
 
 .accordion {
-  /* display: flex; */
-  /* flex-direction: row; */
-  /* justify-content: space-evenly; */
-  /* justify-items: center; */
   width: 90%;
   margin: 20px;
 }
 form {
   justify-content: center;
   align-items: center;
-  /* background-color: rgba(227, 45, 70, 0.2) !important; */
   border: #e32d46 solid 3px;
   margin: 20px;
   width: 80% !important;
@@ -209,4 +169,14 @@ form {
   justify-content: center !important;
   display: flex;
   margin: 20px;
+}
+
+#reset {
+  background-color: white;
+  border: #e32d46 2px solid;
+}
+
+#submit {
+  background-color: #e32d46;
+  color: white;
 }

@@ -22,12 +22,13 @@
       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
       crossorigin="anonymous"
     ></script>
+    <script defer src="home.js"></script>
   </head>
   <body>
     <nav>
       <div class="logo-and-nav">
         <div class="flex-item nav-items">
-          <img src="logo.png" class="logo" alt="Nicole Kurtz Logo" />
+          <img src="images/logo.png" class="logo" alt="Nicole Kurtz Logo" />
         </div>
         <div class="flex-item nav-items">
           <a href="#about-section" class="list-item">About</a>
@@ -40,7 +41,7 @@
     <div class="body">
       <div class="bio" id="about-section">
         <img
-          src="port.png"
+          src="images/port.png"
           class="portrait"
           id="about-section"
           alt="Portrait of Nicole Kurtz - Brunette who is smiling"
@@ -199,10 +200,10 @@
         </div>
       </div>
       <div class="" id="contact-section">
-        <form class="col-12">
+        <form class="col-12" id="form">
           <h1>Contact Form</h1>
           <div class="row my-2">
-            <label for="username" class="col-md-4">Name:</label>
+            <label for="name" class="col-md-4">Name:</label>
 
             <div class="col-md-8">
               <input type="text" id="name" name="name" class="form-control" />
@@ -221,22 +222,31 @@
           </div>
 
           <div class="row my-2">
-            <label for="phone" class="col-md-4">Phone Number:</label>
+            <label for="tel" class="col-md-4">Phone Number:</label>
             <div class="col-md-8">
-              <input
-                type="email"
-                id="email"
-                name="email"
-                class="form-control"
-              />
+              <input type="tel" id="tel" name="tel" class="form-control" />
             </div>
           </div>
+
+          <div class="row my-2">
+            <label for="message" class="col-md-4">Message:</label>
+            <div class="col-md-8">
+              <textarea
+                name="message"
+                id="message"
+                class="form-control"
+                rows="4"
+              ></textarea>
+            </div>
+          </div>
+
           <div id="buttons" class="text-center">
             <button
               type="submit"
               name="submit"
               value="Submit"
-              class="btn btn-primary my-4 px-4"
+              class="btn my-4 px-4"
+              id="submit"
             >
               Submit
             </button>
@@ -244,7 +254,8 @@
               type="reset"
               name="reset"
               value="Reset"
-              class="btn btn-secondary my-4 px-4"
+              id="reset"
+              class="btn secondary my-4 px-4"
             >
               Reset
             </button>
