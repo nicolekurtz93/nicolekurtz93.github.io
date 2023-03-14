@@ -1,6 +1,5 @@
-const form = document.querySelector("form");
+const form = document.querySelector("#form");
 form.addEventListener("submit", handleSubmission);
-
 function handleSubmission(evt) {
   const { name, email, tel } = form.elements;
   var message = ["Please resolve the following errors:\n"];
