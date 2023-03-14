@@ -31,9 +31,13 @@ h2 {
 
 h3,
 h4 {
-  /* color: #e32d46; */
   font-size: 20px;
   margin: 0;
+}
+
+h6 {
+  font-style: italic;
+  font-size: 8px;
 }
 
 nav {
@@ -102,10 +106,11 @@ nav {
 }
 
 .portrait {
-  width: 15%;
+  width: 10%;
   border-radius: 40%;
   background-color: #e32d46;
-  margin: 30px;
+  margin: 10px;
+  min-width: 230px;
 }
 
 .bio {
@@ -115,11 +120,13 @@ nav {
   margin-bottom: 30px;
   width: 100%;
   display: flex;
+  flex-wrap: wrap;
 }
 .bioText {
   margin: 10px;
   font-family: var(--bs-body-font-family);
   width: 50%;
+  min-width: 428px;
 }
 
 .work-items {
@@ -128,11 +135,6 @@ nav {
   flex-wrap: wrap;
   margin: 10px;
   margin-top: 25px !important;
-}
-
-.bio-pic {
-  width: 25%;
-  align-self: right;
 }
 
 .work-item {
@@ -222,7 +224,7 @@ form {
   justify-content: center;
 }
 
-/* .carousel-section {
+.carousel-section {
   width: 100%;
   margin: 10px;
-} */
+}
