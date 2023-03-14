@@ -25,19 +25,18 @@ h1 {
 
 h2 {
   color: #e32d46;
-  font-size: 30px;
+  font-size: 25px !important;
   margin: 0;
 }
 
-h3,
-h4 {
-  font-size: 20px;
+h3 {
+  font-size: 20px !important;
   margin: 0;
-}
-
-h6 {
   font-style: italic;
-  font-size: 8px;
+}
+
+h4 {
+  font-size: 18px !important;
 }
 
 nav {
@@ -86,13 +85,11 @@ nav {
 }
 
 .logo {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   width: 60%;
   justify-content: center;
   align-items: center;
   margin-top: 30px;
   max-width: 1000px;
-  max-height: auto;
 }
 
 .logo-and-nav {
@@ -122,6 +119,7 @@ nav {
   display: flex;
   flex-wrap: wrap;
 }
+
 .bioText {
   margin: 10px;
   font-family: var(--bs-body-font-family);
@@ -148,10 +146,6 @@ nav {
   color: black !important;
 }
 
-.accordion-button {
-  display: flex;
-}
-
 .accordion-button:focus {
   border-color: #e32d46 !important;
   box-shadow: 0 0 0 0 0.25 #e32d46;
@@ -161,10 +155,10 @@ nav {
   width: 90%;
   margin: 20px;
 }
+
 form {
   justify-content: center;
   align-items: center;
-  /* border: #e32d46 solid 3px; */
   margin: 20px;
   width: 90% !important;
   padding: 20px;
@@ -173,7 +167,6 @@ form {
 #contact-section {
   justify-content: center !important;
   display: flex;
-  /* margin: 20px; */
   width: 100%;
 }
 
@@ -203,20 +196,16 @@ form {
   width: 90% !important;
   text-align: center;
   display: flex;
-  justify-content: center;
-  /* margin: 20px; */
-  /* flex-direction: column; */
 }
 
 .carousel-item {
   max-height: 600px !important;
   aspect-ratio: 1/1;
-  display: flex;
-  justify-content: center;
 }
 
 #carousel-image {
   height: 70%;
+  margin-bottom: 10px;
 }
 
 .project-header {
