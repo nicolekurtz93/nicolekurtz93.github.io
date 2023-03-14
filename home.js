@@ -25,15 +25,16 @@ const fetchData = (url) => {
   fetch(url)
     .then((response) => response.json())
     .then((data) => {
-      let element = document.createElement("img");
-      element.src = data.file;
-      element.style.maxHeight = "100px";
+      let cat = document.createElement("img");
+      cat.src = data.file;
+      cat.alt = "Random photo of a cat";
+      cat.style.maxHeight = "100px";
       catLocation.style.display = "flex";
       catLocation.style.justifyContent = "center";
       let text = document.createElement("h2");
       text.textContent = "Thanks for visiting my site!";
 
-      catLocation.appendChild(element);
+      catLocation.appendChild(cat);
       catLocation.appendChild(text);
     })
     .catch((error) => {
