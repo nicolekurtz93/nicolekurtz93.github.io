@@ -17,7 +17,6 @@ html {
 h1 {
   font-weight: 700;
   font-size: 40px;
-  font-family: var(--bs-body-font-family);
   text-align: left;
   font-weight: 600;
   margin-left: 30px;
@@ -52,7 +51,7 @@ nav {
 }
 
 .nav-items {
-  background-color: var(--white);
+  background-color: white;
   flex-wrap: nowrap;
   height: 75px;
   display: flex;
@@ -63,7 +62,7 @@ nav {
 }
 
 .list-item {
-  color: var(--black);
+  color: black;
   text-decoration: none;
   font-family: "Times New Roman", Times, serif;
   font-size: 20px;
@@ -72,7 +71,7 @@ nav {
 
 .list-item:active {
   background-color: #e32d46;
-  color: var(--white);
+  color: white;
 }
 
 .list-item:focus {
@@ -81,7 +80,7 @@ nav {
 
 .list-item:hover {
   background-color: #e32d46;
-  color: var(--white);
+  color: white;
 }
 
 .logo {
@@ -115,7 +114,6 @@ nav {
   align-items: center;
   background-color: white;
   margin-bottom: 30px;
-  /* width: 100%; */
   display: flex;
   flex-wrap: wrap;
   margin: 10px;
@@ -123,9 +121,7 @@ nav {
 
 .bioText {
   margin: 10px;
-  font-family: var(--bs-body-font-family);
   width: 60%;
-  /* min-width: 428px; */
 }
 
 .work-items {
