@@ -1,10 +1,11 @@
 html {
   scroll-padding-top: 175px !important;
 }
-body {
+.body {
   display: flex;
   margin-top: 175px !important;
   flex-direction: column;
+  width: 100%;
 }
 
 .project-body {
@@ -42,7 +43,6 @@ h4 {
 nav {
   top: 0;
   width: 100%;
-  background-color: #e32d46;
   display: flex;
   align-items: center;
   position: fixed;
@@ -115,16 +115,17 @@ nav {
   align-items: center;
   background-color: white;
   margin-bottom: 30px;
-  width: 100%;
+  /* width: 100%; */
   display: flex;
   flex-wrap: wrap;
+  margin: 10px;
 }
 
 .bioText {
   margin: 10px;
   font-family: var(--bs-body-font-family);
-  width: 50%;
-  min-width: 428px;
+  width: 60%;
+  /* min-width: 428px; */
 }
 
 .work-items {
@@ -221,6 +222,7 @@ form {
 footer {
   background-color: #e32d46;
   align-items: center;
+  width: 100%;
 }
 
 footer h2 {
